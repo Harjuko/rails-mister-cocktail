@@ -8,7 +8,6 @@
       <p> <%= dose.description %>
       <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete, :data => { :confirm => 'are you sure?'} do %>
       <i class="far fa-trash-alt"></i>
-      <p>no doses yet</p>
       <% end %>
       </p>
       <p><%= dose.instructions %></p>
