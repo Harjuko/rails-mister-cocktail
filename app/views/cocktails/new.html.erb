@@ -9,12 +9,12 @@
       </ul>
     </div>
   <% end %>
-  <div class= "form-inline">
+  <div class= "form-group">
   <%= f.input :name %>
   <%= f.input :photo %>
   <%= f.input :photo_cache, as: :hidden %>
-  <%= f.submit %>
+  <%= f.submit "submit"%>
   </div>
-  <%= link_to "Back to main", cocktails_path %>
+  <%= link_to "Back to main", cocktails_path, class: "button" %>
 <% end %>
 </div>

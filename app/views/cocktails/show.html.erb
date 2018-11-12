@@ -12,8 +12,7 @@
       </p>
       <p><%= dose.instructions %></p>
       <% end %>
-      <%= link_to "add a dose", new_cocktail_dose_path(@cocktail.id) %>
-      <%= link_to "Edit cocktail", edit_cocktail_path(@cocktail.id) %>
+      <div class="buttons"><%= link_to "Add dose", new_cocktail_dose_path(@cocktail.id), class: "button" %> <%= link_to "Edit cocktail", edit_cocktail_path(@cocktail.id), class: "button" %></div>
     </div>
   </div>
 </div>
