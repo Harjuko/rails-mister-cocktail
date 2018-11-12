@@ -3,15 +3,9 @@
     <div class="col-xs-12 col-sm-6" id="showpage-picture"><%= cl_image_tag @cocktail.photo, height: 300, width: 300, crop: :fill %></div>
     <div class="col-xs-12 col-sm-6" id="showpage-text">
       <h3>Description for <%= @cocktail.name %></h3>
-      <% if @cocktail.doses == true %>
-      <% @cocktail.doses.each do |dose| %>
-      <h5><%= dose.ingredient.name %></h5>
-      <p> <%= dose.description %>
-      <%= link_to cocktail_dose_path(@cocktail, dose), method: :delete, :data => { :confirm => 'are you sure?'} do %>
+
       <i class="far fa-trash-alt"></i>
-      <% else %>
       <p>no doses yet</p>
-      <% end %>
       <% end %>
       </p>
       <p><%= dose.instructions %></p>
